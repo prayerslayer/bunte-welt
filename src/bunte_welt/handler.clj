@@ -61,13 +61,12 @@
                (rand-ip))
         location (geo/where-is ip)
         color (color-at @location)]
-    (do
-      (log/info "IP: %s" ip)
-      (log/info "COLOR: %s" color)
-      (log/info "LOCATION: %s" @location)
-      (-> (generate-html location color)
-          (response)
-          (content-type "text/html")))))
+    (log/info "IP: %s" ip)
+    (log/info "COLOR: %s" color)
+    (log/info "LOCATION: %s" @location)
+    (-> (generate-html location color)
+        (response)
+        (content-type "text/html"))))
 
 (def main
   (-> colorizer
