@@ -2,6 +2,8 @@
 
 A server that converts your Geo IP to RGB. You’re welcome.
 
+![Bunte Welt](bunte-welt.png)
+
 ## Development
 
     lein ring server
