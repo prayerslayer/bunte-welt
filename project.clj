@@ -19,6 +19,7 @@
 
   :main ^:skip-aot bunte-welt.core
   :target-path "target"
+  :uberjar-name "bunte-welt"
   :profiles {:uberjar {:aot :all}
              :dev {:plugins [[lein-ring "0.8.11"]]
                    :env {:http-port 3000}
